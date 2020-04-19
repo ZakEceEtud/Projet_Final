@@ -1,0 +1,175 @@
+body {
+  background-color: lightgrey;
+  font-family: "Times New Roman";
+}
+
+.header {
+  text-align: center;
+}
+
+#A {
+  color: #c80d62
+}
+
+.Total {
+  text-align: center;
+  padding-left: 50px;
+}
+
+.Articles {
+  text-align: center;
+  padding-left: 50px;
+}
+
+.page-footer {
+  padding-top: 2px;
+  font-style: italic;
+  font-family: "Times New Roman";
+}
+
+
+/*Page Paiement*/
+
+.Paiement {
+  padding-left: 40%;
+}
+
+.Cartes {
+  padding-left: 200px;
+}
+
+
+/*Page ECE_Encheres_HTML*/
+.COL_ECE { /* Mise en place de l'image de fond*/
+    background-image: url('img/accueil.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: -20px;
+}
+
+body {
+  font-family: "Times New Roman";
+}
+
+.overlay {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.Texte_Superpose {
+  left: 50%;  /*Place le texte en bas à gauche*/
+  position: absolute;  /*Décale le texte sur le bas droit*/
+  top: 45%; /*Remonte le texte sur le centre droit*/
+  transform: translate(-50%, -55%); /* Translate le texte légèrement plus à gauche*/
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 4px dashed black;
+  color : #d3d6d8;
+  }
+
+
+.page-footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 160px;
+}
+
+body {
+  font-family: "Times New Roman";
+  color : black;
+  font-size: 20px;
+}
+
+.header { /* Mise en place de l'image de fond*/
+    background-image: url('parchemin.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.Formulaire {
+  left: 50%;  /*Place le texte en bas à gauche*/
+  position: absolute;  /*Décale le texte sur le bas droit*/
+  top: 60%; /*Remonte le texte sur le centre droit*/
+  transform: translate(-50%, -55%); /* Translate le texte légèrement plus à gauche*/
+  text-align: center;
+  background-color: rgba(0, 0, 0.5, 0.1);
+}
+
+/*Page Achat_HTML*/
+
+.Premiere {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('img/montre.jpg');
+  background-size: 550px;
+  background-position: top;
+}
+
+.Deuxieme {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/poker.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.Troisieme {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('img/immediat.jpg');
+  background-size: 800px;
+  background-position: center;
+}
+
+.Premiere, .Deuxieme, .Troisieme{
+  position: relative;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 300px
+}
+
+#menu a, #menu h4, #menu h3{
+  color:white;
+}
+#menu h3{
+  text-decoration: underline;
+}
+#menu a{
+  padding: 5px 10px;
+  background-color: rgba(0,0,0, 0.9);
+  transition: all 0.4s;
+}
+#menu a:hover{
+  background-color: rgba(0,0,0, 1);
+  text-decoration: none;
+  border: 2px solid white;
+  transition: all 0.4s;
+}
+#menu ul{
+  padding: 0;
+  list-style: none;
+}
+/* Page Achat_HTML*/
+
+.COL1 {
+  text-align: center;
+}
+
+h2 {
+  text-decoration: underline;
+  color : #3331bc;
+}
+
+.footer {
+  font-style: italic;
+  font-family: "Times New Roman";
+  height: 145px;
+  margin-top: 50px;
+}
+
+/*Page Achat_E_FT...*/
+
+.container h2 {
+  text-align: center;
+}
+
+.container h4 {
+  text-align: center;
+}
