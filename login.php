@@ -1,19 +1,26 @@
 <?php
 
+  // connexion a la bdd
   $title = "Connexion";
   include("include/init.php");
-
+  // Si on est bien connecté
   if(isConnect()){
+    // on redirige sur la page account
     header("Location: account.php");
     die();
   }
 
+  // Si le champ n'est pas vide
   if(!empty($_POST)){
+    // On declare les variables
     $pseudo = $_POST["pseudo"];
     $mdp = $_POST["mdp"];
+
+    // On recupere les informations contenues dans utilisateurs de l'utilisateur
     $result = mysqli_query($bdd, "SELECT * FROM utilisateurs WHERE pseudo = '$pseudo' AND mdp = '$mdp'");
     $utilisateur = mysqli_fetch_array($result);
 
+    // Si l'utilisateur existe
     if($utilisateur != null){
       // Connect l'utilisateur
       $_SESSION["id"] = $utilisateur["id"];
@@ -22,8 +29,7 @@
       die();
     }
   }
-
-
+  // ajout du header dans l'affichage
   include("include/header.php");
  ?>
 
@@ -90,5 +96,6 @@
 
 
  <?php
+  // Ajout du footer
     include("include/footer.php");
 ?>
