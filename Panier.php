@@ -28,17 +28,20 @@
 		header("Location: panier.php");
 		die();
 	}
-
+	//initialisation du prix a 0
 	$total = 0;
+	// Pour chaque element du panier
 	foreach ($_SESSION["cart"] as $key => $data){
+		// on ajoute au total le prix de chaque article du panier 
 		$total += $data["prix"];
 	}
-
+// Ajout du header
 	include("include/header.php");
 ?>
 
 
       <div style="text-align: center;">
+      	<!-- entete -->
         <h2><span id="A">①</span> - ② - ③</h2>
         <p><small> Panier  --  Livraison  --  Paiement</small></p>
 
@@ -51,6 +54,7 @@
           <div class="row well">
 						<table class="table">
 		            <thead>
+		            	<!-- Caracteristiques du panier -->
 		                <tr>
 		                    <th>Photo</th>
 		                    <th>Nom</th>
@@ -61,7 +65,9 @@
 		                </tr>
 		            </thead>
 		            <tbody>
+
 									<?php foreach ($_SESSION["cart"] as $key => $data): ?>
+						<!-- données pour chaque colonne -->
 		                <tr>
 		                  <td>IMG</td><!-- TD = changement dee colonne-->
 		                  <td><?= $data["nom"] ?></td>
@@ -78,7 +84,7 @@
         </div>
 
         <div class="Total col-sm-4">
-
+<!-- Page recapitulatif -->
           <h2><strong>Total de la commande</strong></h2>
 
           <div class="row well">
@@ -97,5 +103,6 @@
       </div>
 
 <?php
+	// Ajout du footer
 	include("include/footer.php");
  ?>
